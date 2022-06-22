@@ -27,7 +27,7 @@ module.exports = {
       network_id: 4
     },
     matic: {
-      provider: () => new HDWalletProvider(["58a25ab0754da76df42b27df6aead81e9f0b0839f1772d3e637a5eaace00ef49"], `https://matic-mumbai.chainstacklabs.com`),
+      provider: () => new HDWalletProvider(["a8cd4e0060a9c51ec8dae9fdacd4df0e6c3d5295afd85a1df37fc7530b57a9db"], `https://rpc-mumbai.maticvigil.com/v1/b17e511c6d036cabf0d0251ac7630511b72a2f14`),
       network_id: 80001,
       networkCheckTimeout: 1000000,
       timeoutBlocks: 200,
@@ -35,8 +35,8 @@ module.exports = {
     polygon: {
       provider: function() {
         return new HDWalletProvider(
-          ["773efa5979f33eb5e3dee5f049d16541396ef1c344c703033dbff01547274226"], // Array of account private keys
-          ` https://matic-mumbai.chainstacklabs.com`// Url to an Ethereum Node
+          ["a8cd4e0060a9c51ec8dae9fdacd4df0e6c3d5295afd85a1df37fc7530b57a9db"], // Array of account private keys
+          ` https://rpc-mumbai.maticvigil.com/v1/b17e511c6d036cabf0d0251ac7630511b72a2f14`// Url to an Ethereum Node
         )
       },
       gas: 5000000,
